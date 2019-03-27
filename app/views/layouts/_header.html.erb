@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <%= link_to "Main", root_path, class: "navbar-brand" %>
+    <ul class="navbar-nav ml-auto">
+      <%= link_to 'hotels#index_gallery', class: "nav-link" do %>
+        <i class="far fa-images"></i> Gallery
+      <% end %>
+      <%= link_to 'hotels#show_contacts', class: "nav-link" do %>
+        <i class="far fa-images"></i> Contacts
+      <% end %>
+    </ul>
+</nav>

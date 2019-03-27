@@ -1,0 +1,5 @@
+<% @gallery.each do |photo| %>
+  <% photo.images.each do |image| %>
+    <%= image_tag(photo.url, size: "100x100", class:  "img-thumbnail"), photo_path(photo.id), remote: true %>
+  <% end %>
+<% end %>
